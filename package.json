@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-  "start": "npx expo start",
+  "start": "npx expo start",  // Keep for local development (but won't work on Vercel)
   "android": "npx expo start --android",
   "ios": "npx expo start --ios",
   "web": "npx expo start --web",
-  "build:web": "expo export --output-dir web-build"  // This line is important
-},
+  "build:web": "expo export --output-dir web-build"  // Export to web-build directory for Vercel
+  },
   "dependencies": {
     "@react-native-async-storage/async-storage": "2.1.2",
     "@react-navigation/bottom-tabs": "^7.4.7",
