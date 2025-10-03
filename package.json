@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npx expo start",                  // Start command for local development
-    "android": "npx expo start --android",      // Android start command
-    "ios": "npx expo start --ios",              // iOS start command
-    "web": "npx expo start --web",              // Web start command for local dev
-    "build:web": "npx expo build:web",          // Web build command for production (Vercel)
-    "postinstall": "npx expo install"           // Ensure dependencies are installed correctly on Vercel
+    "start": "npx expo start",
+    "android": "npx expo start --android",
+    "ios": "npx expo start --ios",
+    "web": "npx expo start --web",
+    "build:web": "npx expo build:web",
+    "postinstall": "npx expo install"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "2.1.2",
@@ -20,7 +20,7 @@
     "expo-location": "~18.1.6",
     "expo-status-bar": "~2.2.3",
     "react": "19.0.0",
-    "react-dom": "^18.0.0",  // Ensure react-dom is installed for web support
+    "react-dom": "^18.0.0",
     "react-native": "0.79.6",
     "react-native-gesture-handler": "~2.24.0",
     "react-native-safe-area-context": "5.4.0",
