@@ -21,6 +21,6 @@
     "@babel/core": "^7.22.9"
   },
   "engines": {
-    "node": "18.x"
+    "node": "22.x"
   }
 }
