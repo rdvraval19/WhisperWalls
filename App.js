@@ -1,19 +1,29 @@
-// App.js
-import React from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
-
-// Import our components
-import { AppProvider } from './src/context/AppContext';
-import AppNavigator from './src/navigation/AppNavigator';
-
-export default function App() {
-  return (
-    <SafeAreaProvider>
-      <AppProvider>
-        <AppNavigator />
-        <StatusBar style="auto" />
-      </AppProvider>
-    </SafeAreaProvider>
-  );
+{
+  "expo": {
+    "name": "my-app",
+    "slug": "my-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
 }
