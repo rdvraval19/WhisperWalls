@@ -23,7 +23,10 @@
       "edgeToEdgeEnabled": true
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "build": {
+        "outputDirectory": "web-build"  // Ensure this is set to 'web-build' for Vercel
+      }
     }
   }
 }
